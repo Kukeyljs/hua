@@ -1,0 +1,162 @@
+#user_register {
+    width: 360px;
+    height: 440px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.user_register_top {
+    display: flex;
+    height: 50px;
+    border-bottom: 1px solid #E9ECF0;
+}
+
+.user_register_top span {
+    flex: 1;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    position: relative;
+}
+
+.user_register_top div {
+    width: 125px;
+    height: 1px;
+    position: absolute;
+    bottom: 0px;
+    left: 28px;
+    background: #FF734C;
+}
+
+.user_register_main {
+    padding: 20px 24px;
+    /* height: 260px; */
+    line-height: 24px;
+}
+
+.user_register_main_a {
+    border: 1px solid #E9ECF0;
+    height: 34px;
+    width: 100%;
+    display: flex;
+}
+
+.user_register_main_a svg {
+    width: 25px;
+    height: 30px;
+    color: #D2D6D9;
+    padding: 3px;
+}
+
+.user_register_main_a input {
+    font-size: 12px;
+    color: black;
+    padding-left: 12px;
+    height: 30px;
+    flex: 1;
+    padding: 7px 6px;
+}
+
+.user_register_main_a button {
+    width: 96px;
+    border: transparent;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+.user_register_main_b {
+    height: 18px;
+    margin: 4px;
+}
+
+.user_register_sub {
+    width: 100%;
+    height: 36px;
+    background: #FF734C;
+    color: white;
+    font-size: 16px;
+    border-radius: 24px;
+    text-align: center;
+    border: 1px solid #FF734C;
+}
+
+.user_register_foot {
+    background: #F7F9FA;
+    position: absolute;
+    bottom: 0px;
+    height: 52px;
+    width: 100%;
+    display: flex;
+    padding: 0 24px;
+}
+
+.user_register_foot div {
+    /* width: 200px; */
+    height: 50px;
+    flex: 1;
+}
+
+.user_register_foot li {
+    float: left;
+}
+
+.user_register_foot a {
+    display: block;
+    height: 50px;
+    position: relative;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    color: black;
+    padding-left: 22px;
+    margin: 0 16px;
+    font-size: 12px;
+}
+
+.user_register_foot li span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../pic/pc_icon.png) no-repeat;
+    position: absolute;
+    left: 0;
+    top: 16px;
+}
+
+.user_register_foot .user_register_qq {
+    background-position: -30px -94px;
+}
+
+.user_register_foot .user_register_zfb {
+    background-position: -60px -94px;
+}
+
+.user_register_foot .user_register_foot_enroll a {
+    margin-left: 30px;
+    color: #FF734C;
+    font-size: 14px;
+}
+
+.user_register_foot .user_register_foot_enroll span {
+    position: absolute;
+    left: 76px;
+    top: 16px;
+    background-position: 0px -68px;
+}
+
+.reg_mail {
+    display: none;
+}
+
+.reg_phone {
+    display: block;
+}
+
+#reg_phones {
+    color: #FF734C;
+}
+
+#reg_mails div {
+    display: none;
+}
