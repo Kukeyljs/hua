@@ -69,7 +69,7 @@
 .zc_top_r {
     float: right;
     display: flex;
-    width: 600px;
+    width: 650px;
 }
 
 .zc_top_r li {
@@ -93,6 +93,17 @@
 .zc_top_r span {
     color: #FC8000;
 }
+
+
+#zc_top .login_nb {
+    flex: 3;
+}
+
+#zc_top .login_nc {
+    flex: 1;
+    cursor: pointer;
+}
+
 
 /* 搜索栏 */
 
@@ -960,6 +971,11 @@
     margin-left: 50px;
 }
 
+.link_pic p {
+    font-size: 14px;
+    text-align: center;
+}
+
 /* 底部 */
 #foot {
     height: 150px;
@@ -1026,6 +1042,7 @@
     width: 36px;
     height: 36px;
     float: left;
+    position: relative;
 }
 
 #side_nav p {
@@ -1090,12 +1107,36 @@
     display: none;
 }
 
+#side_nav span div {
+    display: none;
+}
+
+#side_nav .side_me div {
+    width: 300px;
+    height: 200px;
+    background: white;
+    position: absolute;
+    left: -300px;
+    top: 0;
+}
+
+#side_nav .shop_my span div {
+    width: 120px;
+    height: 38px;
+    position: absolute;
+    left: -120px;
+    top: 0;
+    text-align: center;
+    line-height: 38px;
+    background: white;
+}
+
 /* 客服 */
 #cus_ser {
     width: 140px;
     height: 40px;
     background: #FF6600;
-    position:fixed;
+    position: fixed;
     bottom: 0;
     right: 60px;
     line-height: 40px;

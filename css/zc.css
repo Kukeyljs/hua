@@ -1,8 +1,223 @@
+/* 最上面的导航栏 */
+
+#zc_top {
+    background: #F2F2F2;
+    height: 35px;
+}
+
+#zc_top li {
+    float: left;
+    text-align: center;
+    line-height: 35px;
+    padding: 0 8px;
+    position: relative;
+    font-size: 12px;
+}
+
+#zc_top a {
+    font-size: 12px;
+}
+
+#zc_top .zc_top_l a {
+    display: block;
+    /* width: 100%; */
+    height: 35px;
+    padding-left: 16px;
+}
+
+.zc_top_l span {
+    display: block;
+    background: url(../pic/common_z.png) no-repeat;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0px;
+    top: 5px;
+}
+
+.zc_top_l_1 span {
+    background-position: 0 -318px;
+}
+
+.zc_top_l_2 span {
+    background-position: -374px -131px;
+}
+
+.zc_top_l_3 span {
+    background-position: -294px -171px;
+}
+
+.zc_top_r {
+    float: right;
+    display: flex;
+    width: 600px;
+}
+
+.zc_top_r li {
+    float: left;
+    flex: 1;
+    display: flex;
+}
+
+.zc_top_r .login {
+    flex: 2;
+}
+
+.zc_top_r .login a {
+    margin-right: 8px;
+}
+
+.zc_top_r .zc_top_rl {
+    flex: 3;
+}
+
+.zc_top_r span {
+    color: #FC8000;
+}
+
+/* 搜索栏 */
+
+#search {
+    height: 120px;
+}
+
+.search_main {
+    position: relative;
+}
+
+/* 搜索栏左边 */
+
+#search_l a {
+    display: block;
+    width: 238px;
+    height: 60px;
+    background: url(../pic/index/icon.png) no-repeat;
+    background-position: 0 -248px;
+    position: absolute;
+    left: 0;
+    top: 30px;
+}
+
+/* 搜索栏中间 */
+
+#search_m {
+    margin: auto;
+    position: relative;
+    padding-top: 30px;
+}
+
+#sc {
+    width: 440px;
+    height: 48px;
+    border: #FC8000 solid 2px;
+    border-radius: 24px;
+    margin: auto;
+    /* padding-left:20px; */
+    position: relative;
+}
+
+#sc span {
+    display: block;
+    width: 54px;
+    height: 100%;
+    float: left;
+    background: url(../pic/index/icon.png) no-repeat;
+    padding: 12px;
+    background-position: 21px -34px;
+}
+
+#sc input {
+    width: 264px;
+    height: 100%;
+    float: left;
+    font-size: 14px;
+}
+
+#sc button {
+    width: 118px;
+    height: 100%;
+    background: #FF643C;
+    border-radius: 24px;
+    float: left;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    border: solid 1px #FF643C;
+}
+
+#sc_hot {
+    display: flex;
+    width: 440px;
+    margin: auto;
+    font-size: 12px;
+    padding: 0 20px;
+}
+
+#sc_hot p {
+    flex: 1;
+    text-align: center;
+    line-height: 40px;
+}
+
+#sc_hot a {
+    color: #B4BABF;
+}
+
+/* 搜索栏右边 */
+
+#search_r {
+    position: absolute;
+    right: 0;
+    top: 46px;
+    display: flex;
+    width: 262px;
+}
+
+#search_r span {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../pic/index/icon.png) no-repeat;
+    margin-right: 6px;
+}
+
+#search_r p:nth-of-type(1) {
+    margin-right: 50px;
+}
+
+#search_r span:nth-of-type(1) {
+    background-position: 0 -102px;
+}
+
+#search_r span:nth-of-type(2) {
+    background-position: -34px -102px;
+}
+
+
+/* login */
+
+#login_main {
+    background: url(../pic/index/login_bg.jpg) center center;
+    background-size: cover;
+    height: 474px;
+}
+
+.login_main {
+    position: relative;
+}
+
+
+
+/* 注册信息 */
+
 #user_register {
     width: 360px;
     height: 440px;
     border-radius: 8px;
-    position: relative;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    background: white;
 }
 
 .user_register_top {
@@ -71,7 +286,8 @@
 }
 
 .user_register_sub {
-    width: 100%;
+    margin: 0 35px;
+    width: 80%;
     height: 36px;
     background: #FF734C;
     color: white;
@@ -159,4 +375,48 @@
 
 #reg_mails div {
     display: none;
+}
+
+
+
+/* 底部 */
+#foot {
+    height: 150px;
+    background: white;
+}
+
+.foot {
+    padding: 40px 0 0;
+}
+
+.foot_hua {
+    display: flex;
+    width: 100%;
+}
+
+.foot_hua .foot_hua_last {
+    flex: 3;
+    border-right: none;
+}
+
+.foot_hua li {
+    flex: 1;
+    padding: 0 20px;
+    border-right: 1px solid #DBE4F2;
+    height: 16px;
+    text-align: center;
+}
+
+.foot_hua a {
+    /* color: white; */
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.foot p {
+    font-size: 12px;
+    color: rgba(114, 115, 116, 0.836);
+    line-height: 20px;
+    margin-top: 50px;
+    text-align: center;
 }

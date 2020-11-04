@@ -1,14 +1,14 @@
 <?php
     header("Content-type:text/html;charset=utf-8");
-    $password=$_GET["password"];
-    $mail=$_GET["mail"];
+    $usermail=$_POST["mail"];
+    $password=$_POST["password"];
     $conn = mysqli_connect("localhost","root","root","wzuser");
-    $sql = "INSERT INTO huauser(user_id,user_password,user_mail) VALUES('$mail','$password','$mail')";
+    $sql = "INSERT INTO huauser(user_id,user_mail,user_password) VALUES('$usermail','$usermail','$password')";
     $result=mysqli_query($conn,$sql);
     //使用两个定义
     if($result == 1){
-        echo "成功添加";
+        echo json_encode(array("error" => 0, "data" => '当前手机号已注册')); 
     }else{
-        echo "不成功添加";
+        echo json_encode(array("error" => 1, "data" => '当前手机号已注册'));
     }
 ?>
